@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.farmmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/kashtah"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kashtah"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmMate">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity android:name=".common.ViewOrderedDish"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.OrderDish"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".farmOwner.AddDish"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".farmOwner.ManageDish"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".farmOwner.ManageFarmBooking"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.OrganizeFarmBooking"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".farmOwner.AddFarm"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.CardPayment"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.OrderConfirmaton"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.BookFarm"
+            android:screenOrientation = "portrait" />
+        <activity android:name=".common.Home"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>(
+        </activity>
+        <activity android:name=".farmOwner.FarmerDashboard"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".consumer.ConsumerDashboard"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".farmOwner.ManageFarm"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".common.Login"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".common.Signup"
+            android:screenOrientation = "portrait"/>
+        <service android:name=".common.MyService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/dishImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/add_photo_alternate_24"/>\
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp">
+
+                <TextView
+                    android:id="@+id/dish_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Dish"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderedDish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/dish_text"
+                    android:layout_toRightOf="@+id/dish_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:id="@+id/dishPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderedDish"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/price_text"
+                    android:layout_toRightOf="@+id/price_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"/>
+
+                <TextView
+                    android:id="@+id/price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dish_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginTop="3dp"
+                    android:text="Price"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="4dp" />
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Date"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp" />
+
+                <TextView
+                    android:id="@+id/orderDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dishPrice"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/date_text"
+                    android:layout_toRightOf="@+id/date_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"/>
+
+                <TextView
+                    android:id="@+id/customerMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderDate"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/mobile_text"
+                    android:layout_toRightOf="@+id/mobile_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"/>
+
+                <TextView
+                    android:id="@+id/mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Mobile"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/customer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobile_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Customer"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerMobile"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/customer_text"
+                    android:layout_toRightOf="@+id/customer_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"/>
+
+                <TextView
+                    android:id="@+id/status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customer_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Status"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerName"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/status_text"
+                    android:layout_toRightOf="@+id/status_text"
+                    android:textSize="15sp"
+                    android:textColor="#1E88E5"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

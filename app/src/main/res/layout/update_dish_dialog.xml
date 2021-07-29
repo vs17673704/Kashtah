@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="#1E88E5"
+            android:padding="12dp"
+            android:id="@+id/dishTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Update Dish ...."
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/updateDishName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dish name"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/updateDishDescription"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/updateDishPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Price"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/updateDish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:backgroundTint="#1E88E5"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:backgroundTint="#1E88E5"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "296612002746",
+    "project_id": "farmmate-c6f1b",
+    "storage_bucket": "farmmate-c6f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296612002746:android:0b85f6d2b94d3afded3b83",
+        "android_client_info": {
+          "package_name": "com.android.farmmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296612002746-8jpbhub8f1u0ad5cq2eo7r0rvjnup970.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.farmmate",
+            "certificate_hash": "2a4a2df1029e529683361fb9b7431c7b651c19bf"
+          }
+        },
+        {
+          "client_id": "296612002746-tdrf87e25ooqj4vks3sha51a5096ke0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrH4UaBK892uOXVQjqacZZj6u8Y_Wm1mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296612002746-tdrf87e25ooqj4vks3sha51a5096ke0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

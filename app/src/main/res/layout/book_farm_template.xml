@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farmImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/add_photo_alternate_24"/>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/farmName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Farm Name"
+                android:textSize="20dp"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/farmDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:maxLines="3"/>
+
+            <TextView
+                android:id="@+id/farmPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:id="@+id/farmPriceOvernight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Overnight"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="#4CAF50"/>
+            <TextView
+                android:id="@+id/farmMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile no."
+                android:textSize="15dp"
+                android:textColor="@color/teal_200"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bookFarm"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:src="@drawable/book_online_24"/>
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/locateFarm"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/location_on_24"
+                android:backgroundTint="@color/white"/>
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/callFarm"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/phone_24"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

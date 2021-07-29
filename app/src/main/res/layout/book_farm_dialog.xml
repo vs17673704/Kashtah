@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="#1E88E5"
+            android:padding="12dp"
+            android:id="@+id/farmTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Book Farm ...."
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Select payment option:"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:id="@+id/radioGroup"
+            android:layout_marginLeft="40dp">
+            <RadioButton
+                android:id="@+id/byCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/rupee_note"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <RadioButton
+                android:id="@+id/byCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/credit_card_24" />
+        </RadioGroup>
+
+        <TextView
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Select duration of stay:"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroupPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/regularPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Regular stay" />
+
+            <RadioButton
+                android:id="@+id/overnightPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overnight stay" />
+
+            <RadioButton
+                android:id="@+id/fullDayPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full day" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp">
+
+            <Button
+                android:id="@+id/bookNow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="BOOK"
+                android:textColor="@color/white"
+                android:backgroundTint="#1E88E5"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1">
+
+            </Button>
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="CLOSE"
+                android:backgroundTint="#1E88E5"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
